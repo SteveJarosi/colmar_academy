@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,7 +8,8 @@ body {
 header {
     display: flex;
     margin-left: 24px;
-    height: 32px;
+    margin-right: 24px;
+    height: 64px;
     align-items: center;
     justify-content: space-between;
 }
@@ -34,7 +38,7 @@ article {
     display: flex;
 }
 #learn {
-    
+    flex-wrap: wrap;
     background-color: silver;
 }
 #practice {
@@ -44,18 +48,24 @@ article {
     background-color: lightgray;
 }
 #banner {
-    max-width: 60%;
+    flex: 1 1 300px;
+    width: 60%;
     margin: 32px 24px;
 }
 #startbutton {
-    width: 120px;
+    width: 200px;
     padding: 8px; 
     align-self: center;
-    background-color: slategrey;
+    background-color: rgb(95, 95, 95);
     color: snow;
 }
 .vertflex {
+    flex: 1 1 300px;
+    width: 40%;
+    align-items: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 30px;
+    margin-bottom: 40px;
 }
