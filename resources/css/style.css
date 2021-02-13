@@ -1,4 +1,6 @@
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 header {
     display: flex;
@@ -27,4 +29,33 @@ li {
 a {
     text-decoration: none;
     margin: 0 8px;
+}
+article {
+    display: flex;
+}
+#learn {
+    
+    background-color: silver;
+}
+#practice {
+    background-color: ivory;
+}
+#start {
+    background-color: lightgray;
+}
+#banner {
+    max-width: 60%;
+    margin: 32px 24px;
+}
+#startbutton {
+    width: 120px;
+    padding: 8px; 
+    align-self: center;
+    background-color: slategrey;
+    color: snow;
+}
+.vertflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
