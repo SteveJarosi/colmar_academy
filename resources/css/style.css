@@ -1,0 +1,30 @@
+
+
+header {
+    display: flex;
+    margin-left: 24px;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+#clg {
+    color: grey;
+}
+#hr {
+    display: inline-flex;
+}
+header > img,
+header > h3 {
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+   
+}
+li {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    margin: 0 8px;
+}
