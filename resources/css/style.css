@@ -138,9 +138,9 @@ article {
 }
 
 .cards {
-    flex: 1 2 150px;
+    flex: 1 1 100px;
     width: 90%;
-    max-height: 30%;
+    max-height: 70%;
     min-height: 5%;
     display: flex;
     justify-content: space-between;
@@ -148,7 +148,6 @@ article {
     
 }
 .crd {
-    max-width: 80%;
     max-height: 80%;
     min-height: 5%;
     flex-shrink: 5;
@@ -182,7 +181,9 @@ article {
 
 
 #mygrid {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     flex-wrap: wrap;
     text-align: left;
     margin: 0 56px;
@@ -228,9 +229,12 @@ video {
     margin:0 16px 32px 16px;
 }
 #part2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     flex-direction: column;
-    width: 33%;
+    width: 40%;
+    height: 100%;
 }
 hr {
     margin: 0px;
