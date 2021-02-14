@@ -44,7 +44,7 @@ a {
     margin: 0 8px;
 }
 p {
-    color: slategray;
+    color: rgb(69, 76, 83);
     line-height: 24px;
     margin: 0px 0px;
 }
@@ -122,12 +122,12 @@ article {
 }
 
 .cards_one {
-    width: 34%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    max-height: 650px;
+    max-height: 600px;
     margin: 32px 24px;
 }
 
@@ -138,15 +138,20 @@ article {
 }
 
 .cards {
-    flex: 1 1 50px;
+    flex: 1 2 150px;
     width: 90%;
     max-height: 30%;
-    display: inline-flex;
+    min-height: 5%;
+    display: flex;
     justify-content: space-between;
     margin: 0px 16px 16px 24px;
     
 }
 .crd {
+    max-width: 80%;
+    max-height: 80%;
+    min-height: 5%;
+    flex-shrink: 5;
     margin-left: 16px;
 }
 .guestl {
@@ -171,7 +176,7 @@ article {
 
 }
 #sl {
-   
+    width: 97.7vw;
     text-align: center;
 }
 
@@ -180,11 +185,11 @@ article {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-    height: 700px;
     margin: 0 56px;
-    
 }
-
+#mygrid-mobile {
+    display: none;
+}
 .grd {
     max-width: 100%;
 }
@@ -196,7 +201,7 @@ article {
 
 #thesis {
     display: inline-block;
-    margin: 32px auto 0px auto;
+    margin: 0px auto 0px auto;
     
     background-color: rgb(238, 236, 236);
 }
@@ -208,21 +213,24 @@ article {
     display: flex;
     flex-wrap: wrap;
 }
+#part4-mobile {
+    display: none;
+}
 video {
     
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 24px;
 }
 #part1 {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 55%;
     margin:0 16px 32px 16px;
 }
 #part2 {
     display: flex;
     flex-direction: column;
-    width: 36%;
+    width: 33%;
 }
 hr {
     margin: 0px;
@@ -241,7 +249,7 @@ nav {
     margin-right: 16px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 .header-pc {
     display: none;
 }
@@ -254,7 +262,60 @@ display: flex;
     height: 64px;
     align-items: center;
     justify-content: space-around;
+}
+.reading_man {
+    display: none;
+}
+.cards_one {
+    width: 100%;
+}
+.cards {
+    flex: 1 1 200px;
+    width: 100%;
+    max-height: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 16px 16px 24px;
+    
+}
+.cardtext {
+    flex: 1 1 150px;
+    margin-left: 16px;
+    width: 100%;
 
 }
-
+#mygrid {
+    display: none;
+    
+}
+#mygrid-mobile {
+    /* background-color: floralwhite;
+    min-height: 400px;
+    width: 97.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch; */
+    display: inline;
+    text-align: left;
+    margin-top: 5px;
+}
+#mygrid-mobile > h3 {
+    font-size: 27px;
+    font-weight: 400;
+    padding: 5px;
+    margin: 5px 0px;
+    border-top: 15px solid whitesmoke;
+    
+}
+#part4{
+    display: none;
+}
+#part4-mobile {
+    display: inline;
+}
+footer nav {
+    display: none;
+}
 }
