@@ -7,13 +7,16 @@ body {
     text-align: left;
 }
 
-header {
+.header-pc {
     display: flex;
     margin-left: 24px;
     margin-right: 0px;
     height: 64px;
     align-items: center;
     justify-content: space-between;
+}
+.header-mobile {
+    display: none
 }
 
 #clg {
@@ -56,7 +59,7 @@ h2 {
     font-weight: 700;
 }
 h4 {
-    
+    margin: 6px 0;
     font-size: 22px;
     font-weight: 700;
 }
@@ -236,4 +239,22 @@ footer {
 }
 nav {
     margin-right: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+.header-pc {
+    display: none;
+}
+.header-mobile {
+
+
+display: flex;
+    margin-left: 24px;
+    margin-right: 0px;
+    height: 64px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 }
